@@ -60,14 +60,6 @@ const Navbar = () => {
             >
               Volunteer Form
             </a>
-            <a
-              href="https://bookmyshow.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-foreground text-background font-heading text-sm tracking-widest uppercase px-8 py-4 hover:bg-foreground/90 transition-all duration-300 shadow-[0_0_10px_rgba(255,255,255,0.15)] hover:shadow-[0_0_20px_rgba(255,255,255,0.35)] hover:scale-105"
-            >
-              Buy Tickets
-            </a>
           </div>
 
           {/* Mobile toggle */}
@@ -109,14 +101,6 @@ const Navbar = () => {
               className="inline-flex items-center gap-2 border border-foreground text-foreground font-heading text-sm tracking-widest uppercase px-6 py-4 hover:bg-foreground hover:text-background transition-colors mt-4"
             >
               Volunteer Form
-            </a>
-            <a
-              href="https://bookmyshow.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 bg-foreground text-background font-heading text-sm tracking-widest uppercase px-8 py-4 hover:bg-foreground/90 transition-colors"
-            >
-              Buy Tickets
             </a>
           </motion.div>
         )}
