@@ -36,30 +36,50 @@ const UpcomingSection = () => {
           {/* Diagonal accent */}
           <div className="absolute top-0 right-0 w-32 h-32 bg-foreground/[0.03] -skew-x-12 translate-x-8 -translate-y-4" />
 
+          <div className="relative z-10 flex flex-col md:flex-row md:items-start md:justify-between gap-8">
+            <div className="flex-1">
+              <div className="flex flex-wrap gap-3 mb-6">
+                <span className="inline-flex items-center gap-2 border border-border px-3 py-1 font-body text-xs tracking-widest text-muted-foreground uppercase">
+                  <Music size={12} />
+                  Live Concert
+                </span>
+              </div>
+
+              <p className="font-heading text-2xl md:text-3xl font-bold tracking-tight text-foreground mb-4">
+                Distorटेड Dreams
+              </p>
+
+              <h3 className="font-heading text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-foreground uppercase leading-[0.9]">
+                25 OCT
+                <br />
+                <span className="text-muted-foreground">2026</span>
+              </h3>
+
+              <div className="mt-8 flex flex-col sm:flex-row gap-6 text-muted-foreground">
+                <div className="flex items-center gap-2 font-body text-sm tracking-wide">
+                  <Calendar size={14} />
+                  <span>Sunday, 25 October 2026</span>
+                </div>
+                <div className="flex items-center gap-2 font-body text-sm tracking-wide">
+                  <MapPin size={14} />
+                  <span>Bhubaneswar, Odisha</span>
+                </div>
+              </div>
+            </div>
+
+            <motion.img
+              src={distortedDreamsLogo}
+              alt="Distorटेड Dreams concert logo"
+              className="w-32 md:w-40 lg:w-48 h-auto object-contain shrink-0 self-start"
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            />
+          </div>
+
           <div className="relative z-10">
-            <div className="flex flex-wrap gap-3 mb-6">
-              <span className="inline-flex items-center gap-2 border border-border px-3 py-1 font-body text-xs tracking-widest text-muted-foreground uppercase">
-                <Music size={12} />
-                Live Concert
-              </span>
-            </div>
 
-            <h3 className="font-heading text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-foreground uppercase leading-[0.9]">
-              11 JULY
-              <br />
-              <span className="text-muted-foreground">2026</span>
-            </h3>
-
-            <div className="mt-8 flex flex-col sm:flex-row gap-6 text-muted-foreground">
-              <div className="flex items-center gap-2 font-body text-sm tracking-wide">
-                <Calendar size={14} />
-                <span>Saturday, 11 July 2026</span>
-              </div>
-              <div className="flex items-center gap-2 font-body text-sm tracking-wide">
-                <MapPin size={14} />
-                <span>Bhubaneswar, Odisha</span>
-              </div>
-            </div>
 
             <motion.div
               className="mt-10 h-[1px] bg-border group-hover:bg-foreground/30 transition-colors duration-300"
