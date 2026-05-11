@@ -91,6 +91,14 @@ const UpcomingSection = () => {
 
             <div className="mt-8 flex flex-col sm:flex-row items-start sm:items-center gap-6">
               <a
+                href="https://forms.gle/rEviFiTdpUgv69wM8"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 border border-foreground text-foreground font-heading text-sm tracking-widest uppercase px-8 py-4 hover:bg-foreground hover:text-background transition-colors"
+              >
+                Volunteer Form
+              </a>
+              <a
                 href="https://bookmyshow.com"
                 target="_blank"
                 rel="noopener noreferrer"
