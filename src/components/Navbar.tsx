@@ -98,7 +98,7 @@ const Navbar = () => {
               href="https://forms.gle/rEviFiTdpUgv69wM8"
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center gap-2 border border-foreground text-foreground font-heading text-sm tracking-widest uppercase px-6 py-4 hover:bg-foreground hover:text-background transition-colors mt-4"
+              className="inline-flex items-center gap-2 bg-foreground text-background font-heading text-sm tracking-widest uppercase px-8 py-4 hover:bg-foreground/90 transition-colors mt-4"
             >
               Volunteer Form
             </a>
