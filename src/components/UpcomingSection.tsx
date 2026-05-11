@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { Calendar, MapPin, Music } from "lucide-react";
+import distortedDreamsLogo from "@/assets/distorted-dreams-logo.png";
 
 const UpcomingSection = () => {
   return (
