@@ -102,7 +102,8 @@ const UpcomingSection = () => {
                 href="https://bookmyshow.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center gap-2 bg-foreground text-background font-heading text-sm tracking-widest uppercase px-8 py-4 hover:bg-foreground/90 transition-colors"
+                className="hidden"
+                aria-hidden="true"
               >
                 Buy Tickets
               </a>
