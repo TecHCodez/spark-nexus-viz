@@ -1,4 +1,21 @@
-import { motion } from "framer-motion";
+import { motion, useInView, useMotionValue, useTransform, animate } from "framer-motion";
+import { useEffect, useRef } from "react";
+
+const CountUp = ({ target, suffix = "" }: { target: number; suffix?: string }) => {
+  const ref = useRef<HTMLSpanElement>(null);
+  const inView = useInView(ref, { once: true, margin: "-100px" });
+  const count = useMotionValue(0);
+  const rounded = useTransform(count, (latest) => `${Math.round(latest)}${suffix}`);
+
+  useEffect(() => {
+    if (inView) {
+      const controls = animate(count, target, { duration: 2, ease: [0.16, 1, 0.3, 1] });
+      return controls.stop;
+    }
+  }, [inView, target, count]);
+
+  return <motion.span ref={ref}>{rounded}</motion.span>;
+};
 
 const AboutSection = () => {
   return (
