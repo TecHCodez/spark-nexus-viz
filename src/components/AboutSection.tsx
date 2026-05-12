@@ -61,12 +61,12 @@ const AboutSection = () => {
             transition={{ duration: 0.5, delay: 0.3 }}
           >
             {[
-              { num: "1+", label: "Events" },
-              { num: "9K+", label: "Expected Attendees" },
-              { num: "2025", label: "Est." },
+              { num: "1+", label: "Events", node: <>1+</> },
+              { num: "9K+", label: "Expected Attendees", node: <CountUp target={9} suffix="K+" /> },
+              { num: "2025", label: "Est.", node: <>2025</> },
             ].map((stat) => (
               <div key={stat.label} className="bg-background p-6 md:p-8 text-center">
-                <p className="font-heading text-3xl md:text-4xl font-bold text-foreground">{stat.num}</p>
+                <p className="font-heading text-3xl md:text-4xl font-bold text-foreground">{stat.node}</p>
                 <p className="font-body text-xs tracking-[0.2em] text-muted-foreground uppercase mt-2">{stat.label}</p>
               </div>
             ))}
