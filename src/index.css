@@ -42,8 +42,11 @@
   * {
     @apply border-border;
   }
+  html, body {
+    background: transparent !important;
+  }
   body {
-    @apply bg-background text-foreground font-body;
+    @apply text-foreground font-body;
     position: relative;
   }
   body::before {
