@@ -44,6 +44,24 @@
   }
   body {
     @apply bg-background text-foreground font-body;
+    background: radial-gradient(circle at center, #0a0a0a 0%, #000 100%);
+    position: relative;
+  }
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background-image: repeating-linear-gradient(
+      to right,
+      rgba(255, 255, 255, 0.02) 0px,
+      rgba(255, 255, 255, 0.02) 1px,
+      transparent 1px,
+      transparent 4px
+    );
+    opacity: 0.4;
+    pointer-events: none;
+    mix-blend-mode: soft-light;
+    z-index: 0;
   }
   h1, h2, h3, h4, h5, h6 {
     @apply font-heading;
