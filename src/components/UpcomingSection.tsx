@@ -50,7 +50,7 @@ const UpcomingSection = () => {
               </p>
 
               <h3 className="font-heading text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter text-foreground uppercase leading-[0.9]">
-                25 OCT
+                24 OCT
                 <br />
                 <span className="text-muted-foreground">2026</span>
               </h3>
@@ -58,7 +58,7 @@ const UpcomingSection = () => {
               <div className="mt-8 flex flex-col sm:flex-row gap-6 text-muted-foreground">
                 <div className="flex items-center gap-2 font-body text-sm tracking-wide">
                   <Calendar size={14} />
-                  <span>Sunday, 25 October 2026</span>
+                  <span>Saturday, 24 October 2026</span>
                 </div>
                 <div className="flex items-center gap-2 font-body text-sm tracking-wide">
                   <MapPin size={14} />
