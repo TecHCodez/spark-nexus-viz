@@ -1,4 +1,4 @@
-import { Instagram } from "lucide-react";
+import { Instagram, Facebook } from "lucide-react";
 import voxfireLogo from "@/assets/voxfire-logo.jpg";
 
 const Footer = () => {
@@ -25,6 +25,15 @@ const Footer = () => {
               aria-label="Instagram"
             >
               <Instagram size={18} />
+            </a>
+            <a
+              href="https://facebook.com/voxfireodisha"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-muted-foreground hover:text-foreground transition-colors duration-200"
+              aria-label="Facebook"
+            >
+              <Facebook size={18} />
             </a>
           </div>
         </div>
